@@ -1,8 +1,19 @@
+import { useEffect } from "react";
+import { Layout } from "../../components";
 
 
 const HomePage = () => {
+
+  useEffect(() => {;
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <div>HomePage</div>
+    <Layout>
+      <main>
+        contenido
+      </main>
+    </Layout>
   )
 }
 
