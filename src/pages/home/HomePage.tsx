@@ -15,22 +15,22 @@ const HomePage = () => {
   const articleItem: Article[] = [
     {
       id:1,
-      image: "https://i.pinimg.com/564x/4c/4f/46/4c4f463a700aa75432ff6151d6c31a55.jpg",
+      image: "https://i.postimg.cc/bJRvbRWP/11.png",
       description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas facilis quis, molestiae tempora ut natus modi iure aut libero a accusantium, quos quibusdam vero eveniet recusandae, ullam perspiciatis inventore similique.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas facilis quis, molestiae tempora ut natus modi iure aut libero a accusantium, quos quibusdam vero eveniet recusandae, ullam perspiciatis inventore similique"
     },
     {
       id:2,
-      image: "https://i.pinimg.com/564x/aa/df/43/aadf438ae1fa181be6a3f81af94dadfd.jpg",
+      image: "https://i.postimg.cc/G2vyfYfg/12.png",
       description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas facilis quis, molestiae tempora ut natus modi iure aut libero a accusantium, quos quibusdam vero eveniet recusandae, ullam perspiciatis inventore similique.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas facilis quis, molestiae tempora ut natus modi iure aut libero a accusantium, quos quibusdam vero eveniet recusandae, ullam perspiciatis inventore similique"
     },
     {
       id:3,
-      image: "https://i.pinimg.com/564x/d4/17/4f/d4174f534aae53b8da52b82883d64f80.jpg",
+      image: "https://i.postimg.cc/cHdxsnHb/13.png",
       description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas facilis quis, molestiae tempora ut natus modi iure aut libero a accusantium, quos quibusdam vero eveniet recusandae, ullam perspiciatis inventore similique.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas facilis quis, molestiae tempora ut natus modi iure aut libero a accusantium, quos quibusdam vero eveniet recusandae, ullam perspiciatis inventore similique"
     },
     {
       id:4,
-      image: "https://i.pinimg.com/736x/f2/b6/57/f2b657a085cc863ca9697a21f197873a.jpg",
+      image: "https://i.postimg.cc/k4wnDgRX/14.png",
       description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas facilis quis, molestiae tempora ut natus modi iure aut libero a accusantium, quos quibusdam vero eveniet recusandae, ullam perspiciatis inventore similique.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas facilis quis, molestiae tempora ut natus modi iure aut libero a accusantium, quos quibusdam vero eveniet recusandae, ullam perspiciatis inventore similique"
     }
   ]
@@ -43,7 +43,7 @@ const HomePage = () => {
     <Layout>
       <main>
 
-       <h2 className="font-bold text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo voluptate consequuntur</h2>    
+       <h2 className="mt-24 px-2 font-bold text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo voluptate consequuntur</h2>    
 
 
         <section className="mt-28 grid grid-cols-1 gap-14">
