@@ -5,3 +5,9 @@
 *{
     color-scheme: dark;
 }
+
+.card-gradient {
+    background: linear-gradient(90deg, #636262 0%, rgba(62, 62, 62, 0) 100%);
+    height: 1px;
+
+}

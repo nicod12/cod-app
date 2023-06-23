@@ -46,26 +46,28 @@ const HomePage = () => {
        <h2 className="mt-24 px-2 font-bold text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo voluptate consequuntur</h2>    
 
 
-        <section className="mt-28 grid grid-cols-1 gap-14">
+        <section className="mt-28 grid grid-cols-2 sm:grid sm:grid-cols-1 gap-14">
           
           {
             articleItem.map(item => {
               return(
-                  <article 
-                    key={item.id} 
-                    className="flex gap-2 sm:w-[90%] sm:my-0 sm:mx-auto shadow-sm shadow-gray-400"
-                  >
-                    <div className="sm:w-[40%]">
-                      <img 
-                        className="sm:h-[300px] w-full bg-cover bg-no-repeat bg-center bg-fixed "
-                        src={item.image} 
-                        alt="img01" 
-                      />
-                    </div>
-                    <div className="sm:w-[60%] sm:p-2">
-                      <p>{item.description}</p>
-                    </div>
-                </article>
+                 <section  key={item.id} >
+                    <article                   
+                      className="flex sm:items-center sm:p-0 px-24 gap-2 sm:w-[90%] sm:my-0 sm:mx-auto sm:border-none "
+                    >
+                      <div className="sm:w-[40%] w-[50%]">
+                        <img 
+                          className="sm:h-[230px] h-[300px] w-full bg-cover bg-no-repeat bg-center bg-fixed "
+                          src={item.image} 
+                          alt="img01" 
+                        />
+                      </div>
+                      <div className=" sm:w-full sm:p-2 w-[80%] text-center ">
+                        <p className="sm:text-[15px] text-[20px]">{item.description}</p>
+                      </div>
+                  </article>
+                    <div className="card-gradient mt-11 w-[80%] my-0 mx-auto"></div>
+                  </section>
               )
             })
           }
