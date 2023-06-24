@@ -33,9 +33,9 @@ const MenuMob = () => {
     const pathname = window.location.pathname;
     return(
 
-        <div className="my-0 mx-auto text-[20px] flex items-center gap-40 md:hidden lg:hidden xl:hidden 2xl:hidden 3xl:hidden">
+        <div className="my-0 mx-auto w-full  text-[20px] flex items-center gap-40 md:hidden lg:hidden xl:hidden 2xl:hidden 3xl:hidden">
             <img
-                className="w-[100px] h-12 " 
+                className="w-[25%] h-12 " 
                 src={logo} 
                 alt="logo" 
             />

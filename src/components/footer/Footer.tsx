@@ -1,15 +1,19 @@
 
+interface FooterProps {
+  className: string;
+}
 
-const Footer = () => {
+
+const Footer:React.FC<FooterProps> = ({ className }) => {
   return (
-    <section className="mt-20">
-      <footer className="bg-[#242222] h-12">
-        <article className="flex sm:text-[10px] text-center p-2  text-white">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam libero voluptate error explicabo labore tempora ab harum recusandae provident cupiditate sunt ipsa, pariatur accusantium autem beatae nostrum. Commodi, nisi illum.
+
+      <footer className={className}>
+        <article className=" sm:text-[10px] sm:w-[60%] my-0 mx-auto p-2  text-white">
+          <p className="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam libero voluptate error explicabo labore tempora ab harum recusandae provident cupiditate sunt ipsa, pariatur accusantium autem beatae nostrum.</p>
         </article>
       </footer>
-    </section>
+
   )
 }
 
-export default Footer
+export default Footer;

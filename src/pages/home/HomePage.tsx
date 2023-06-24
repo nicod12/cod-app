@@ -1,5 +1,5 @@
-import { FC, useEffect } from "react";
-import { Layout } from "../../components";
+import {  useEffect } from "react";
+import { Footer, Header } from "../../components";
 
 
 interface Article {
@@ -40,13 +40,15 @@ const HomePage = () => {
   }, []);
 
   return (
-    <Layout>
-      <main>
+    <main className="h-screen" >
+      <Header />
+
+
 
        <h2 className="mt-24 px-2 font-bold text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo voluptate consequuntur</h2>    
 
 
-        <section className="mt-28 grid grid-cols-2 sm:grid sm:grid-cols-1 gap-14">
+        <section className="my-28 grid grid-cols-2 sm:grid sm:grid-cols-1 gap-14">
           
           {
             articleItem.map(item => {
@@ -74,8 +76,10 @@ const HomePage = () => {
        
 
         </section>
-      </main>
-    </Layout>
+      <Footer className="bg-[#242222] sm:h-auto h-auto " />
+
+    </main>
+   
   )
 }
 
