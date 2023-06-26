@@ -39,15 +39,17 @@ const MenuMob = () => {
                 src={logo} 
                 alt="logo" 
             />
-            <FaBars 
-                onClick={() => {
-                    if (showMenu == "sm:hidden") {
-                      setShowMenu("");
-                    } else {
-                      setShowMenu("sm:hidden");
-                    }
-                  }}
-            />
+            <div className="w-[50%]">
+                <FaBars 
+                    onClick={() => {
+                        if (showMenu == "sm:hidden") {
+                        setShowMenu("");
+                        } else {
+                        setShowMenu("sm:hidden");
+                        }
+                    }}
+                />
+            </div>
             
 
         <article
@@ -103,7 +105,7 @@ const MenuNorm = () => {
 
 const NavBar = () => {
   return (
-    <nav className="fixed z-50 top-6 left-1/2   -translate-x-1/2 flex items-center justify-between py-[2px] px-[20px] bg-transparent backdrop-blur-[5px]">      
+    <nav className="fixed z-50 top-6 left-1/2 font-bold  -translate-x-1/2 flex items-center justify-between py-[2px] px-[20px] bg-transparent backdrop-blur-[5px]">      
         <MenuMob />
         <MenuNorm />
     </nav>
