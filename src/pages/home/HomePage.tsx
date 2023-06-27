@@ -48,7 +48,7 @@ const HomePage = () => {
        <h2 className="mt-24 px-2 font-bold text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo voluptate consequuntur</h2>    
 
 
-        <section className="my-28 grid grid-cols-2 sm:grid sm:grid-cols-1 gap-14">
+        <section className="my-28 grid grid-cols-2 md:grid-cols-1 sm:grid sm:grid-cols-1 gap-14">
           
           {
             articleItem.map(item => {

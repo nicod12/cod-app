@@ -29,51 +29,37 @@ const menuItems:Items[] = [
 const logo = "https://i.postimg.cc/wTdy2tWb/logoW.png"
 
 const MenuMob = () => {
-    const [showMenu, setShowMenu] = useState("sm:hidden")
+    const [showMenu, setShowMenu] = useState(false);
     const pathname = window.location.pathname;
-    return(
-
-        <div className="my-0 mx-auto w-full  text-[20px] flex items-center gap-40 md:hidden lg:hidden xl:hidden 2xl:hidden 3xl:hidden">
-            <img
-                className="w-[25%] h-12 " 
-                src={logo} 
-                alt="logo" 
-            />
-            <div className="w-[50%]">
-                <FaBars 
-                    onClick={() => {
-                        if (showMenu == "sm:hidden") {
-                        setShowMenu("");
-                        } else {
-                        setShowMenu("sm:hidden");
-                        }
-                    }}
-                />
-            </div>
-            
-
-        <article
-            className={`mt-5 sm:flex items-start justify-start w-full flex-col lg:hidden md:hidden 3xl:hidden  2xl:hidden xl:hidden ${showMenu}`}
-        >
-            {menuItems.map((item,index) => {
-                return (
-                <li
+  
+    const toggleMenu = () => {
+      setShowMenu(!showMenu);
+    };
+  
+    return (
+      <nav className="w-full bg-transparent backdrop-blur-[5px] md:hidden lg:hidden xl:hidden 2xl:hidden 3xl:hidden">
+        <div className="flex w-44 items-center justify-between py-[2px] px-[20px]">
+          <img className="w-[25%] h-12" src={logo} alt="logo" />
+          <FaBars onClick={toggleMenu} />
+        </div>
+  
+        {showMenu && (
+          <article className="mt-5 font-bold sm:flex items-start justify-end w-full flex-col lg:hidden md:hidden 2lx:hidden xl:hidden">
+            {menuItems.map((item, index) => (
+              <li
                 key={index}
-                    className={`list-none mt-5 ${
-                    item.key == pathname && "bg-white text-black rounded-md px-5"
-                    }`}
-                >
-                    <Link to={`${item.key}`}>{item.title}</Link>
-                </li>
-                );
-            })}
-         </article>
-
-
-         </div>
-    )
-}
-
+                className={`list-none mt-5 ${
+                  item.key === pathname ? "bg-gray-800 text-gray-400 rounded-md px-5" : ""
+                }`}
+              >
+                <Link to={item.key}>{item.title}</Link>
+              </li>
+            ))}
+          </article>
+        )}
+      </nav>
+    );
+  };
 
 const MenuNorm = () => {
     return(
