@@ -31,18 +31,18 @@ const logo = "https://i.postimg.cc/wTdy2tWb/logoW.png"
 const MenuMob = () => {
     const [showMenu, setShowMenu] = useState(false);
     const pathname = window.location.pathname;
-  
+
     const toggleMenu = () => {
       setShowMenu(!showMenu);
     };
-  
+
     return (
       <nav className="w-full bg-transparent backdrop-blur-[5px] md:hidden lg:hidden xl:hidden 2xl:hidden 3xl:hidden">
         <div className="flex w-44 items-center justify-between py-[2px] px-[20px]">
           <img className="w-[25%] h-12" src={logo} alt="logo" />
           <FaBars onClick={toggleMenu} />
         </div>
-  
+
         {showMenu && (
           <article className="mt-5 font-bold sm:flex items-start justify-end w-full flex-col lg:hidden md:hidden 2lx:hidden xl:hidden">
             {menuItems.map((item, index) => (
