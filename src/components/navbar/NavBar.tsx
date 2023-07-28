@@ -38,8 +38,8 @@ const MenuMob = () => {
 
     return (
       <nav className="w-full bg-transparent backdrop-blur-[5px] md:hidden lg:hidden xl:hidden 2xl:hidden 3xl:hidden">
-        <div className="flex w-44 items-center justify-between py-[2px] px-[20px]">
-          <img className="w-[25%] h-12" src={logo} alt="logo" />
+        <div className="flex w-[220px] items-center justify-between py-[2px] px-[20px]">
+          <img className="w-[30%] h-12" src={logo} alt="logo" />
           <FaBars onClick={toggleMenu} />
         </div>
 
