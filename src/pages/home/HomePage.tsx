@@ -55,11 +55,11 @@ const HomePage = () => {
               return(
                  <section  key={item.id} >
                     <article 
-                      className="flex sm:items-center sm:p-0 sm:h-[230px] px-24 gap-2 sm:w-[90%] sm:my-0 sm:mx-auto sm:border-none "
+                      className="flex sm:items-center sm:p-0  px-24 gap-2 sm:w-[90%] sm:my-0 sm:mx-auto sm:border-none "
                     >
                       <div className="sm:w-[40%] w-[50%]">
                         <img 
-                          className="sm:h-[230px] h-[300px] w-full bg-cover bg-no-repeat bg-center bg-fixed "
+                          className="sm:h-[350px] h-[300px] w-full bg-cover bg-no-repeat bg-center bg-fixed "
                           src={item.image} 
                           alt="img01" 
                         />
