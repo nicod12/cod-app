@@ -49,13 +49,13 @@ const HomePage = () => {
 
 
         <section className="my-28 grid grid-cols-2 md:grid-cols-1 sm:grid sm:grid-cols-1 gap-14">
-          
+
           {
             articleItem.map(item => {
               return(
                  <section  key={item.id} >
-                    <article                   
-                      className="flex sm:items-center sm:p-0 px-24 gap-2 sm:w-[90%] sm:my-0 sm:mx-auto sm:border-none "
+                    <article 
+                      className="flex sm:items-center sm:p-0 sm:h-[230px] px-24 gap-2 sm:w-[90%] sm:my-0 sm:mx-auto sm:border-none "
                     >
                       <div className="sm:w-[40%] w-[50%]">
                         <img 
@@ -73,7 +73,6 @@ const HomePage = () => {
               )
             })
           }
-       
 
         </section>
       <Footer className="bg-[#242222] sm:h-auto h-auto " />
